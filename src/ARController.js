@@ -1309,6 +1309,7 @@ export default class ARController {
    */
   _copyImageToHeap(sourceImage) {
     console.warn( 'Hi!' );
+    var foo = 'bar';
 
     if(!sourceImage) {
     // default to preloaded image
