@@ -1308,6 +1308,7 @@ export default class ARController {
    * @return {number} 0 (void)
    */
   _copyImageToHeap(sourceImage) {
+    console.log( 'Hi!' );
 
     if(!sourceImage) {
     // default to preloaded image
