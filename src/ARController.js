@@ -79,6 +79,7 @@ export default class ARController {
   }
 
   dispose() {
+  	console.log( '001', 'ARController.dispose()' );
 
     // dispose of the camera
     // this replaces ARCameraParam.dispose()
@@ -90,6 +91,7 @@ export default class ARController {
 
     if(this.id > -1) {
       this.artoolkit.teardown(this.id);
+      this.artoolkit = null;
     }
 
     // Note: only <video> has an srcObject - images don't
